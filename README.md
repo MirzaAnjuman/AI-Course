@@ -18,6 +18,7 @@ Introduction to real-world AI tools used for automation and content generation
 These experiences helped me better understand how AI can be applied to solve real problems.
 
 📅 Duration of the Course
+
 Spring 2025, 5th Semester
 
 👨‍🏫 Course Taken By
