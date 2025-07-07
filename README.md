@@ -1,9 +1,22 @@
 # AI-Course Repository
-This repository includes the projects I completed during my AI course at North East University Bangladesh. It was a hands-on course where I learned how different AI algorithms work and how they can be used in real applications like games.
+📌 Purpose of This Course
+This repository is created to store and showcase all the practical works, assignments, and mini-projects completed during the AI course. The main goal of the course was to help students understand core AI concepts and apply them through hands-on programming tasks.
 
-I worked on search algorithms like BFS, DFS, Best-First Search, and AO*, and also learned about game-playing techniques like Minimax and Alpha-Beta Pruning. I used these to create simple AI-based games such as Tic-Tac-Toe and Nim.
+💡 What I Learned
+During this course, I gained practical knowledge of key AI techniques such as:
 
-Besides coding, I also got introduced to modern AI tools and how they’re used in tasks like automation and content creation. Overall, this course helped me gain both theoretical and practical knowledge in AI.
+Search algorithms: BFS, DFS, Best-First Search, AO*
 
-📅 Semester: Spring 2025
-👨‍🏫 Instructor: Mr. Razorshi Prozzwal Talukder
+Game-playing algorithms: Minimax, Alpha-Beta Pruning
+
+Application of these algorithms in simple games like Tic-Tac-Toe and Nim
+
+Introduction to real-world AI tools used for automation and content generation
+
+These experiences helped me better understand how AI can be applied to solve real problems.
+
+📅 Duration of the Course
+Spring 2025, 5th Semester
+
+👨‍🏫 Course Taken By
+Mr. Razorshi Prozzwal Talukder
