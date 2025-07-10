@@ -34,3 +34,5 @@ How it works: Explores as far as possible along each branch before backtracking 
  Time: O(V + E)
  
  Space: O(V)
+
+ ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/69802018b084940673b14a035e8953f065feee2c/Algorithm%20Implementation/Screenshot_4.png)
