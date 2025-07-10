@@ -38,3 +38,19 @@ How it works: Explores as far as possible along each branch before backtracking 
  ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/69802018b084940673b14a035e8953f065feee2c/Algorithm%20Implementation/Screenshot_4.png)
  
  ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/2d9520516f99ef4cc99447bc694c9ee74ef486ca/Algorithm%20Implementation/Screenshot_3.png)
+
+3. Iterative Deepening Search (IDS)
+
+How it works: Combines DFS and BFS by performing DFS with increasing depth limits.
+
+Applications:
+ 
+Memory-efficient search
+ 
+Used in game trees
+ 
+Complexity:
+ 
+Time: O(b^d)
+ 
+Space: O(d)
