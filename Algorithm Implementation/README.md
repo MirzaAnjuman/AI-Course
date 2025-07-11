@@ -80,3 +80,30 @@ Space: O(b^(d/2))
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_7.png)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_8.png)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_9.png)
+
+5. Depth-Limited Search (DLS)
+How it works:
+Performs a Depth-First Search (DFS) but with a predefined depth limit l. Nodes beyond this depth are not expanded.
+
+Applications:
+
+Searching in infinite or very large search spaces
+
+Useful when the depth of the solution is known or bounded
+
+Web crawling with depth restrictions
+
+AI planning
+
+Complexity:
+
+Time: O(b^l)
+
+Space: O(l)
+(Where b = branching factor, l = depth limit)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/7421c218b82d34ef35f11b18b42096f32f66a36e/Algorithm%20Implementation/Screenshot_10.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/7421c218b82d34ef35f11b18b42096f32f66a36e/Algorithm%20Implementation/Screenshot_11.png)
+
+
+
+
