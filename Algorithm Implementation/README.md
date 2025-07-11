@@ -231,6 +231,84 @@ Space: O(k × d)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/ccacb528f1b23d7742c05d5ac00ef3bfc7446be5/Algorithm%20Implementation/Screenshot_18.png)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/ccacb528f1b23d7742c05d5ac00ef3bfc7446be5/Algorithm%20Implementation/Screenshot_19.png)
 
+10.Minimax Algorithm
+
+How it works:
+
+The Minimax algorithm is used in two-player, turn-based, zero-sum games.
+
+It recursively explores the game tree to a certain depth d, assuming:
+
+One player (Max) tries to maximize the score
+
+The other player (Min) tries to minimize it
+
+It selects the move that maximizes the minimum possible loss — i.e., assumes the opponent plays optimally.
+
+Applications:
+
+Game AI:
+
+Tic Tac Toe
+
+Chess
+
+Checkers
+
+Connect Four
+
+Complexity:
+
+Time: O(b^d)
+(where b = branching factor, d = depth of the tree)
+
+Space: O(d) (with recursion stack)
+
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/614002347e3919dab982af570da2f7a160c82726/Algorithm%20Implementation/Screenshot_20.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/614002347e3919dab982af570da2f7a160c82726/Algorithm%20Implementation/Screenshot_21.png)
+
+11. Alpha-Beta Pruning
+    
+How it works:
+
+Alpha-Beta Pruning is an optimization of the Minimax algorithm.
+
+It eliminates branches in the game tree that don’t need to be explored because they cannot affect the final decision.
+
+It uses two values:
+
+Alpha (α): the best already explored value along the path to the maximizer
+
+Beta (β): the best already explored value along the path to the minimizer
+
+If the current branch cannot produce a better outcome than previously explored ones, it is pruned (cut off).
+
+Applications:
+
+Efficient game-tree pruning in:
+
+Chess engines
+
+Tic Tac Toe
+
+Checkers
+
+Any Minimax-based AI
+
+Complexity:
+
+Time complexity:
+
+Best case: O(b^(d/2))
+
+Worst case: O(b^d) (same as Minimax)
+(Where b = branching factor, d = depth of the tree)
+
+Space complexity: O(d) (due to recursion stack)
+
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/f4b378be5d2445b63dd0d33c2e11d0e37ae0aa0d/Algorithm%20Implementation/Screenshot_22.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/f4b378be5d2445b63dd0d33c2e11d0e37ae0aa0d/Algorithm%20Implementation/Screenshot_23.png)
+
 
 
 
