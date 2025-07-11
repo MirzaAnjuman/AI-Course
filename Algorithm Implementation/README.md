@@ -198,6 +198,39 @@ Space complexity: Also exponential due to storing the solution graph and backtra
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/f285d6d232ca6325bac54751e8124c2abb971345/Algorithm%20Implementation/Screenshot_16.png)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/f285d6d232ca6325bac54751e8124c2abb971345/Algorithm%20Implementation/Screenshot_17.png)
 
+9. Beam Search
+    
+How it works:
+
+Beam Search is a heuristic search algorithm that, at each level of the search tree, keeps only the best k nodes (based on heuristic score) and discards the rest.
+
+k is the beam width, which controls how many nodes are expanded at each level.
+
+It's like a breadth-first search, but memory-efficient due to pruning.
+
+Applications:
+
+Natural Language Processing (NLP)
+
+Machine translation (e.g., sequence-to-sequence models)
+
+Text generation
+
+Speech recognition
+
+Any domain where sequence prediction is needed
+
+Complexity:
+
+Time: O(k × d)
+(where k = beam width, d = depth of the search)
+
+Space: O(k × d)
+(Much more efficient than BFS or A
+
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/ccacb528f1b23d7742c05d5ac00ef3bfc7446be5/Algorithm%20Implementation/Screenshot_18.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/ccacb528f1b23d7742c05d5ac00ef3bfc7446be5/Algorithm%20Implementation/Screenshot_19.png)
+
 
 
 
