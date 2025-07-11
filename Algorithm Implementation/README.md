@@ -195,6 +195,9 @@ Heuristic accuracy
 
 Space complexity: Also exponential due to storing the solution graph and backtracking
 
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/f285d6d232ca6325bac54751e8124c2abb971345/Algorithm%20Implementation/Screenshot_16.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/f285d6d232ca6325bac54751e8124c2abb971345/Algorithm%20Implementation/Screenshot_17.png)
+
 
 
 
