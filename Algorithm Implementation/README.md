@@ -105,6 +105,97 @@ Space: O(l)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/7421c218b82d34ef35f11b18b42096f32f66a36e/Algorithm%20Implementation/Screenshot_10.png)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/7421c218b82d34ef35f11b18b42096f32f66a36e/Algorithm%20Implementation/Screenshot_11.png)
 
+6. Heuristic Search
+   
+How it works:
+Heuristic Search uses a heuristic function to estimate the cost from a current node to the goal. This estimate helps prioritize which nodes to explore, making the search more efficient than uninformed methods.
+
+Applications:
+
+Puzzle solving (e.g., 8-puzzle, sliding tiles)
+
+Game playing (e.g., chess, tic-tac-toe)
+
+Pathfinding (e.g., A* in maps or navigation systems)
+
+Robotics and planning
+
+Complexity:
+
+Depends on the heuristic:
+
+A good heuristic reduces time and space complexity
+
+A poor heuristic can degrade performance to that of uninformed search
+
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4a1efb426c46279ee51d279f572aee86190625d2/Algorithm%20Implementation/Screenshot_12.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4a1efb426c46279ee51d279f572aee86190625d2/Algorithm%20Implementation/Screenshot_13.png)
+
+7. Best-First Search
+   
+How it works:
+
+It uses a heuristic function to evaluate which node appears to be closest to the goal.
+
+Always expands the node with the lowest heuristic cost h(n) — this is known as the Greedy Best-First Search.
+
+It is called "best-first" because it chooses the "best-looking" node at each step based on the heuristic.
+
+Applications:
+
+Pathfinding (e.g., navigation systems)
+
+Puzzle solving (e.g., 8-puzzle)
+
+Game AI
+
+Web crawling
+
+Complexity:
+
+Time: O(b^m)
+
+Space: O(b^m)
+(where b is the branching factor, m is the maximum depth explored — may vary based on heuristic quality)
+
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/c1655aefdadacd0b597cf7f8ad6c393aaebc6248/Algorithm%20Implementation/Screenshot_14.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/c1655aefdadacd0b597cf7f8ad6c393aaebc6248/Algorithm%20Implementation/Screenshot_15.png)
+
+8. AO* Algorithm
+   
+How it works:
+
+AO* (And-Or Star) is an extension of the A* algorithm designed for AND-OR graphs, where solving a problem may involve:
+
+OR nodes: choosing one among multiple alternatives
+
+AND nodes: satisfying multiple sub-goals together
+
+It uses a heuristic function to estimate costs, like A*, and builds a solution graph while backtracking and updating costs.
+
+Applications:
+
+Expert systems
+
+Automated planning and reasoning
+
+Problem solving with hierarchical tasks or dependencies
+
+Complexity:
+
+Time complexity: Exponential in the worst case — depends on:
+
+Branching factor
+
+Number of AND/OR combinations
+
+Heuristic accuracy
+
+Space complexity: Also exponential due to storing the solution graph and backtracking
+
+
+
+
 
 
 
