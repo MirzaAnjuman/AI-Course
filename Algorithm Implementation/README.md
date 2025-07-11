@@ -82,7 +82,9 @@ Space: O(b^(d/2))
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_9.png)
 
 5. Depth-Limited Search (DLS)
+   
 How it works:
+
 Performs a Depth-First Search (DFS) but with a predefined depth limit l. Nodes beyond this depth are not expanded.
 
 Applications:
