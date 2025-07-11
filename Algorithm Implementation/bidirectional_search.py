@@ -1,43 +1,52 @@
 from collections import deque
 
+# Undirected graph
 graph = {
     'A': ['B', 'C'],
-    'B': ['D', 'E'],
-    'C': ['F']
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B'],
+    'F': ['C']
 }
 
+def bidirectional_search(graph, start, goal):
+    if start == goal:
+        return [start]
 
-def bidirectional(graph, start, goal):
-    forward = deque([(start, [start])])
-    backward = deque([(goal, [goal])])
+    # Queues for forward and backward search
+    forward_queue = deque([(start, [start])])
+    backward_queue = deque([(goal, [goal])])
 
+    # Visited dictionaries to store paths
     forward_visited = {start: [start]}
     backward_visited = {goal: [goal]}
 
-    while forward and backward:
-        if forward:
-            node, path = forward.popleft()
-            if node in backward_visited:
-                backward_path = backward_visited[node]
-                return path + backward_path[-2::-1]
+    while forward_queue and backward_queue:
+        # Expand forward search
+        node_f, path_f = forward_queue.popleft()
+        if node_f in backward_visited:
+            return path_f + backward_visited[node_f][-2::-1]
 
-            for neighbor in graph[node]:
-                if neighbor not in forward_visited:
-                    forward_visited[neighbor] = path + [neighbor]
-                    forward.append((neighbor, path + [neighbor]))
+        for neighbor in graph.get(node_f, []):
+            if neighbor not in forward_visited:
+                new_path = path_f + [neighbor]
+                forward_visited[neighbor] = new_path
+                forward_queue.append((neighbor, new_path))
 
-        if backward:
-            node, path = backward.popleft()
-            if node in forward_visited:
-                forward_path = forward_visited[node]
-                return forward_path + path[-2::-1]
+        # Expand backward search
+        node_b, path_b = backward_queue.popleft()
+        if node_b in forward_visited:
+            return forward_visited[node_b] + path_b[-2::-1]
 
-            for neighbor in graph[node]:
-                if neighbor not in backward_visited:
-                    backward_visited[neighbor] = path + [neighbor]
-                    backward.append((neighbor, path + [neighbor]))
+        for neighbor in graph.get(node_b, []):
+            if neighbor not in backward_visited:
+                new_path = path_b + [neighbor]
+                backward_visited[neighbor] = new_path
+                backward_queue.append((neighbor, new_path))
 
+    # No connection found
     return None
 
-
-print(bidirectional(graph, 'A', 'F'))
+# Test the function
+print(bidirectional_search(graph, 'A', 'F'))
