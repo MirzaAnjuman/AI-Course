@@ -1,5 +1,10 @@
 def min_max(game_tree, node, is_max):
-    if not game_tree[node]:
+    # If the node is a leaf (contains a numeric value), return it
+    if isinstance(node, int):
+        return node
+
+    # If the node has no children, return it directly (should not happen here)
+    if not game_tree.get(node):
         return node
 
     if is_max:
@@ -15,7 +20,7 @@ def min_max(game_tree, node, is_max):
 
     return best_value
 
-
+# Game tree with numeric leaf values
 game_tree = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
