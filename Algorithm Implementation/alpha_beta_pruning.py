@@ -1,5 +1,10 @@
 def alpha_beta(game_tree, node, is_max, alpha, beta):
-    if not game_tree[node]:
+    # If the node is a leaf (integer), return it
+    if isinstance(node, int):
+        return node
+
+    # If the node has no children, return the node itself (should not happen here)
+    if not game_tree.get(node):
         return node
 
     if is_max:
@@ -10,8 +15,7 @@ def alpha_beta(game_tree, node, is_max, alpha, beta):
             alpha = max(alpha, best_value)
 
             if beta <= alpha:
-                break
-
+                break  # Beta cut-off
         return best_value
 
     else:
@@ -22,11 +26,10 @@ def alpha_beta(game_tree, node, is_max, alpha, beta):
             beta = min(beta, best_value)
 
             if beta <= alpha:
-                break
-
+                break  # Alpha cut-off
         return best_value
 
-
+# Game tree with numeric leaf values
 game_tree = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
@@ -37,4 +40,5 @@ game_tree = {
     'G': [9]
 }
 
+# Run alpha-beta pruning from root
 print(alpha_beta(game_tree, 'A', True, float('-inf'), float('inf')))
