@@ -57,3 +57,26 @@ Space: O(d)
 
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/bccf5df220a0faca2b1768e96408940a576ccdcb/Algorithm%20Implementation/Screenshot_6.png)
 ![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/bccf5df220a0faca2b1768e96408940a576ccdcb/Algorithm%20Implementation/Screenshot_5.png)
+
+4. Bidirectional Search
+
+How it works:
+Runs two simultaneous searches — one forward from the start node and one backward from the goal node — until they meet.
+
+Applications:
+
+Finding the shortest path in maps and graphs
+
+Route planning (e.g., GPS navigation systems)
+
+Puzzle solving (e.g., 8-puzzle)
+
+Complexity:
+
+Time: O(b^(d/2))
+
+Space: O(b^(d/2))
+
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_7.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_8.png)
+![image alt](https://github.com/MirzaAnjuman/AI-Course/blob/4f4d0e02095f430eedda7b8816e4a861403349d7/Algorithm%20Implementation/Screenshot_9.png)
