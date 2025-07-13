@@ -1,5 +1,5 @@
 # AI-Course Repository
-📌 Purpose of This Course
+ Purpose of This Course
 
 This repository is created to store and showcase all the practical works, assignments, and mini-projects completed during the AI course. The main goal of the course was to help students understand core AI concepts and apply them through hands-on programming tasks.
 
